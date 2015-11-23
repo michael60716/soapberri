@@ -140,33 +140,24 @@ input.name {
 
 
 .video-container {
-  height: 600px;
+  height: 100%;
   width: 100%;
   position: relative;
   /*background-color: black;*/
 }
 
 .video-text {
-  color: #474747;
+  color: white;
   position: absolute;
   top: 50%;
   transform: translate3d(50%, -50%, 0);
-  right: 80%;
-  z-index: 99;
-  font-size: 2.5em;
-/*  background-color: white;*/
-  /*opacity: 0.6;*/
+  right: 50%;
+  z-index: 2;
+  font-size: 2em;
+  background-color: black;
+  padding: 10px;
+  opacity: 0.7;
 }
-
-.video-overlay {
-  height:100%;
-  width: 100%;
-  position: absolute;
-  z-index: 98;
-  background-color: silver;
-  opacity: 0.3;
-}
-
 
 .hand-video {
   width: 100%;
