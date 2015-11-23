@@ -80,7 +80,7 @@ a {
   color: #A09FA0;
 }
 
-a:hover {
+a.selected, a:hover {
   color: #1F465E;
 
 }
@@ -98,14 +98,14 @@ a:hover {
   margin-top: 7%;
   font-size: 3em;
   font-weight: bold;
-  font-variant: capitalize
+  font-variant: capitalize;
+  margin-bottom: 1%;
 /*  font-family: 'josefin sans'*/
   
 }
 
 .home-desc {
-  font-size: 1.188em;
-  margin-top: 3%;
+  font-size: 1.313em;
 }
 
 .home-image {
