@@ -15,7 +15,6 @@ html, body, p, h1, h3, li {
 header {
   display: flex;
   height: 10%;
-  margin: 3%;
 }
 
 footer {
@@ -59,7 +58,6 @@ input {
 .menu-item {
   list-style: none;
   padding: 10px;
-  font-size:20px;
 }
 
 .home-container {
