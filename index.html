@@ -15,6 +15,8 @@
 
     <script src="lib/parallax.min.js"></script>   
 
+    <script src="lib/smooth-scroll.js"></script>
+
     <script src="//load.sumome.com/" data-sumo-site-id="523878fc1929b645a53dfaa6c6c014e7b574d023aa8de25aa8ba4839dad142c2" async="async"></script>
 
     <link rel="didot" href="didot.ttf">
@@ -28,11 +30,11 @@
         <div class="logo">
         </div>
         <ul class="menu-list">
-          <li class="menu-item"><a href="" class="selected">Home</a></li>
-          <li class="menu-item"><a href="">Soapberry</a></li>
-          <li class="menu-item"><a href="">Shampoo/Body Gel</a></li>
-          <li class="menu-item"><a href="">Story</a></li>
-          <li class="menu-item"><a href="">Signup</a></li>
+          <li class="menu-item"><a href="#home" class="selected">Home</a></li>
+          <li class="menu-item"><a href="#soapberry">Soapberry</a></li>
+          <li class="menu-item"><a href="#shampoo">Shampoo/Body Gel</a></li>
+          <li class="menu-item"><a href="#story">Story</a></li>
+          <li class="menu-item"><a href="#signup">Signup</a></li>
         </ul>
     </header>
 
@@ -99,7 +101,7 @@
 
     <div class="what-container">
 
-      <div class="margin-container"> 
+      <div id="soapberry" class="margin-container"> 
       
         <h1 class="">What is a Soapberry</h1>
       
@@ -148,7 +150,7 @@
 
     <div class="section-container">
 
-      <div class="margin-container">
+      <div id="shampoo" class="margin-container">
 
         <h1 class="container-title">
           Shampoo / Body Gel
@@ -202,7 +204,7 @@
 
     <div class="section-container">
 
-      <div class="margin-container">
+      <div id="story" class="margin-container">
 
         <h1 class="container-title">
           Our Story
@@ -218,7 +220,7 @@
 
 
 
-    <div class="parallax-signup" data-parallax="scroll" data-image-src="img/bg3.jpg">
+    <div id="signup" class="parallax-signup" data-parallax="scroll" data-image-src="img/bg3.jpg">
       <div class="signup-container">
         <h1 >
           Receive Early Bird Rewards
@@ -321,6 +323,11 @@
 
   </script>
 
+  <script>
+    smoothScroll.init({
+      easing: easeInOutQuad,
+    });
+  </script>
 
   </body>
 </html>
