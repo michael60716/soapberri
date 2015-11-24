@@ -2,18 +2,28 @@ html, body {
   height: 100%;
   width: 100%;
   margin: 0px;
+  color: #565556;
 }
 
 html, body, p, h1, h3, li {
-  font-family: 'Open Sans',sans-serif;
+  font-family: 'didot', serif;
   font-weight: 300;
-  letter-spacing: 0.05em;
+  color: #474747;
 }
 
+h1 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 1.313em;
+  line-height: 1.5em;
+}
 
 header {
   display: flex;
   height: 10%;
+  margin: 3%;
 }
 
 footer {
@@ -26,11 +36,13 @@ footer {
 }
 
 input, button {
-  font-size: 19px;
+  font-size: 15px;
+
 }
 
 input {
-  border: 1px solid black;
+  border: 2px solid silver;
+/*  margin-top: 5%*/
 }
 
 
@@ -41,6 +53,7 @@ input {
   background-position: center;
   height: 100%;
   width: 25%;
+  margin-left: 2%;
 
 }
 
@@ -48,18 +61,51 @@ input {
   display: flex;
   width: 100%;
   justify-content: flex-end;
-  
 }
 
 .menu-item {
   list-style: none;
   padding: 10px;
+  color: #A09FA0;
+    font-size: 1.1em;
 }
+
+/************ HYPERLINK ***************/
+
+a:link {
+  text-decoration: none;
+}
+
+a {
+  color: #A09FA0;
+}
+
+a.selected, a:hover {
+  color: #1F465E;
+
+}
+
+/************ ***************/
+
 
 .home-container {
   /*background-color: green;*/
   text-align: center;
-  height: 100%;
+  height: 80%;
+}
+
+.home-title {
+  margin-top: 7%;
+  font-size: 3em;
+  font-weight: bold;
+  font-variant: capitalize;
+  margin-bottom: 1%;
+/*  font-family: 'josefin sans'*/
+  
+}
+
+.home-desc {
+  font-size: 1.313em;
 }
 
 .home-image {
@@ -68,6 +114,7 @@ input {
   background-repeat: no-repeat;
   background-position: center;
   height: 20%;
+  margin-top: 4%;
   /*width: 10%;*/
 }
 
@@ -94,6 +141,10 @@ input.name {
   padding-left: 10px;
 }
 
+.coupon {
+  font-size: 0.875em;
+}
+
 
 .bg-container {
   background-image: url("../img/bg1.jpg");
@@ -105,41 +156,49 @@ input.name {
 
 
 .what-container {
-  height: 100%;
+  height: 80%;
+  width: 100%;
+  margin-top: 50px;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 
 .parallax-window {
-    min-height: 400px;
+    min-height: 600px;
     background: transparent;
 }
 
-.parallax-signup {
-    min-height: 100%;
-    background: transparent;
-    position: relative;
-}
 
 .video-container {
-  height: 100%;
+  height: 600px;
   width: 100%;
   position: relative;
   /*background-color: black;*/
 }
 
 .video-text {
-  color: white;
+  color: #474747;
   position: absolute;
   top: 50%;
   transform: translate3d(50%, -50%, 0);
-  right: 50%;
-  z-index: 2;
-  font-size: 2em;
-  background-color: black;
-  padding: 10px;
-  opacity: 0.7;
+  right: 80%;
+  z-index: 99;
+  font-size: 2.5em;
+/*  background-color: white;*/
+  /*opacity: 0.6;*/
 }
+
+.video-overlay {
+  height:100%;
+  width: 100%;
+  position: absolute;
+  z-index: 98;
+  background-color: silver;
+  opacity: 0.3;
+}
+
 
 .hand-video {
   width: 100%;
@@ -150,7 +209,7 @@ input.name {
 
 .section-container {
   margin-top: 50px;
-  height: 100%;
+  height: 80%;
   width: 100%;
   text-align: center;
   display: flex;
@@ -174,9 +233,17 @@ input.name {
 
 .value-prop-item {
   padding: 10px 5px;
-  font-size: 1.5em;
+  font-size: 1.250em;
   width: calc(100%/4.24);
+  color: #A4A1A1;
+  font-style: italic;
 
+}
+
+.parallax-signup {
+    min-height: 100%;
+    background: transparent;
+    position: relative;
 }
 
 .signup-container {
@@ -184,6 +251,7 @@ input.name {
   /*opacity: 0.6;*/
   position: absolute;
   width: 100%;
+  /*height: 100%*/
   top: 50%;
   transform: translateY(-50%);
 }
@@ -231,6 +299,7 @@ svg {
 #mc_embed_signup_scroll {
   display: flex;
   justify-content: center;
+  margin-top: 3%
 
 }
 
