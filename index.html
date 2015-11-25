@@ -10,6 +10,8 @@
 
     <link rel="stylesheet" type="text/css" href="styles/style.css">
 
+    <link rel="stylesheet" type="flex/css" href="styles/flex.css">
+
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
@@ -46,7 +48,7 @@
         <div class="logo">
         </div>
         <ul class="menu-list">
-          <li class="menu-item"><a href="#home" class="selected">Home</a></li>
+          <li class="menu-item"><a href="http://soapberri.com" class="selected">Home</a></li>
           <li class="menu-item"><a data-scroll href="#soapberry">Soapberry</a></li>
           <li class="menu-item"><a href="#shampoo">Shampoo/Body Gel</a></li>
           <li class="menu-item"><a href="#story">Story</a></li>
@@ -72,8 +74,8 @@
 
       <form method="POST" action="//api.cloudstitch.io/michael60716/magic-form/datasources/sheet" class="form">
         <div class="email-container">
-          <input class="name" placeholder="First Name">
-          <input class="email" placeholder="Enter your email here">
+          <input type="text" name="FirstName" class="name" placeholder="First Name">
+          <input type="email" name="Email" class="email" placeholder="Enter your email here">
           <button type="submit" class="email-button">Sign Up</button>
         </div>
       </form> 
@@ -258,10 +260,10 @@
 
 
 
-              <form method="POST" action="//api.cloudstitch.io/michael60716/magic-form/datasources/sheet" class="form">
+      <form method="POST" action="//api.cloudstitch.io/michael60716/magic-form/datasources/sheet" class="form">
         <div class="email-container">
-          <input class="name" placeholder="First Name">
-          <input class="email" placeholder="Enter your email here">
+          <input type="text" name="FirstName" class="name" placeholder="First Name">
+          <input type="email" name="Email" class="email" placeholder="Enter your email here">
           <button type="submit" class="email-button">Sign Up</button>
         </div>
       </form> 
