@@ -94,7 +94,8 @@ a.selected, a:hover {
 .home-container {
   /*background-color: green;*/
   text-align: center;
-  height: 80%;
+  height: 70%;
+/*  max-height: 90%;*/
 }
 
 .home-title { 
@@ -118,9 +119,9 @@ a.selected, a:hover {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  height: 20%;
+  min-height: 18%;
   margin-top: 4%;
-  /*width: 10%;*/
+/*  min-width: 10%;*/
 }
 
 .email-container {
@@ -372,6 +373,11 @@ svg {
 
 
 
+/*///////////Thank you page styling//////////*/
 
+.fb-share-button {
+  background-color: silver
+
+}
 
 
