@@ -12,6 +12,7 @@ html, body, p, h1, h3, li {
 }
 
 h1 {
+  margin-top: 0;
   font-size: 3em;
 }
 
@@ -55,6 +56,7 @@ input {
   height: 100%;
   width: 25%;
   margin-left: 2%;
+  max-width: 10%
 
 }
 
@@ -95,7 +97,7 @@ a.selected, a:hover {
   height: 80%;
 }
 
-.home-title {
+.home-title { 
   margin-top: 5%;
   font-size: 3em;
   font-weight: bold;
@@ -121,6 +123,11 @@ a.selected, a:hover {
   /*width: 10%;*/
 }
 
+.email-container {
+  margin-top: 4%
+
+}
+
 .email-button {
   background-color: #1F465E;
   color: white;
@@ -135,6 +142,8 @@ input.email {
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 70px;
+  margin-right: 10px;
+
 }
 
 input.name {
@@ -142,6 +151,7 @@ input.name {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
+  margin-right: 10px;
 }
 
 .coupon {
@@ -269,10 +279,10 @@ input.name {
 
 .signup-overlay {
   background-color: white;
-  height: 100%;
+  height: 120%;
   width: 100%;
   position: absolute;
-  top: 0;
+  top: -10%;
   opacity: 0.6;
   z-index: -1;
 }
