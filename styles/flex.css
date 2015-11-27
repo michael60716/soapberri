@@ -1,4 +1,44 @@
-.container {
-	display: flex;
-	direction: column;
+/* ================================= 
+  Media Queries/Flex
+==================================== */
+
+@media (min-width: 769px) {
+	.main-header,
+	.menu-list {
+		display: flex;
+	}
+
+	.main-header {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+
+@media (min-width: 1025px) {
+  
+  .main-header {
+  flex-direction: row;
+  justify-content: space-between;
+}
+  
+
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+@media (min-width: 769px) {
+	.main-header {
+		width: 90%;
+
+	}
+
+}
+@media (min-width: 1025px) {
+	.main-header {
+		width: 90%;
+		max-width: 1150px;
+	}
 }
