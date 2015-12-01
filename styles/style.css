@@ -3,8 +3,8 @@
 }
 
 html, body {
- /* height: 100%;
-  width: 100%;*/
+  height: 100%;
+  width: 100%;
   margin: 0px;
   color: #565556;
 }
@@ -26,7 +26,7 @@ h3 {
 }
 
 header {
-  height: 10%;
+  /*height: 10%;*/
   margin: 3%;
   text-align: center;
 }
