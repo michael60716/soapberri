@@ -35,10 +35,26 @@
 
 	}
 
+	.input-email, .input-name {
+		margin-right: 10px;
+	}
+
 }
 @media (min-width: 1025px) {
 	.main-header {
 		width: 90%;
 		max-width: 1150px;
+	}
+}
+
+@media (max-width: 769px) {
+	.email-container, .email-container2 {
+	display: flex;
+	flex-direction: column;
+	margin: 0 15px;
+	}
+
+	.menu-list {
+		display: none;
 	}
 }

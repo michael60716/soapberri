@@ -20,9 +20,17 @@ h1 {
   font-size: 3em;
 }
 
+h2{
+  font-size: 1.6em;
+  line-height: 1.8em;
+  font-weight: normal;
+  margin-bottom: 0px;
+}
+
 h3 {
   font-size: 1.313em;
   line-height: 1.8em;
+  text-align: left;
 }
 
 header {
@@ -43,12 +51,12 @@ footer {
 input, button {
   font-size: 15px;
   font-family: 'didot';
+  margin-bottom: 5px;
 
 }
 
 input {
   border: 2px solid silver;
-/*  margin-top: 5%*/
 }
 
 
@@ -96,30 +104,25 @@ a.selected, a:hover {
 
 }
 
-/************ ***************/
+/*************************************/
 
-
-.home-container {
-  /*background-color: green;*/
+.home-container { 
   text-align: center;
   height: 70%;
-/*  max-height: 90%;*/
 }
 
 .home-title { 
-  margin-top: 5%;
+    margin-top: 5%;
   font-size: 3em;
   font-weight: bold;
-  font-variant: capitalize;
   margin-bottom: 1%;
   text-transform: capitalize;
-/*  font-family: 'josefin sans'*/
-  
 }
 
 .home-desc {
   font-size: 1.5em;
   color: #7c7c7c;
+  text-align: center;
 }
 
 .home-image {
@@ -129,7 +132,6 @@ a.selected, a:hover {
   background-position: center;
   min-height: 18%;
   margin-top: 4%;
-/*  min-width: 10%;*/
 }
 
 .email-container {
@@ -150,21 +152,21 @@ input.email {
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 70px;
-  margin-right: 10px;
+/*  margin-right: 10px; mobile*/
 
 }
 
 input.name {
-  width: 130px;
+  /*width: 130px; mobile*/
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
-  margin-right: 10px;
+  /*margin-right:10px; mobile*/
 }
 
 .coupon {
   margin-top: 1.5%;
-  font-size: 0.875em;
+  font-size: 1.1em;
 }
 
 
@@ -178,7 +180,7 @@ input.name {
 
 
 .what-container {
-  height: 80%;
+  /*height: 70%; mobile*/
   width: 100%;
   text-align: center;
   display: flex;
@@ -200,22 +202,30 @@ input.name {
 }
 
 .video-text {
-  color: white;
+  color: #3e3e3e;
   position: absolute;
   top: 50%;
   transform: translate3d(50%, -50%, 0);
-  right: 80%;
+  right: 85%;
   z-index: 99;
-  font-size: 2.5em;
-/*  background-color: white;*/
-  /*opacity: 0.6;*/
+  font-size: 2.2em;
+  width: 20%;
+}
+
+.video-text-overlay {
+  height: 100%;
+  width: 30%;
+  z-index: 98;
+  position: absolute;
+  background-color: white;
+  opacity: 0.4;
 }
 
 .video-overlay {
   height:100%;
   width: 100%;
   position: absolute;
-  z-index: 98;
+  z-index: 97;
   background-color: silver;
   opacity: 0.3;
 }
@@ -223,7 +233,6 @@ input.name {
 
 .hand-video {
   width: 100%;
-  /*height: 100%;*/
   opacity: 0.7;
 }
 
@@ -269,6 +278,11 @@ input.name {
 
 }
 
+
+#story {
+  height: 70%;
+}
+
 .parallax-signup {
     min-height: 100%;
     background: transparent;
@@ -295,6 +309,10 @@ input.name {
   z-index: -1;
 }
 
+.email-container2 {
+  margin-top: 2%
+}
+
 .transparent {
   opacity: 0.5;
 }
@@ -311,10 +329,6 @@ input.name {
 .social-icons-list li svg {
   width: 32px;
   color: #1F465E;
-}
-
-svg {
-  fill: #1F465E;
 }
 
 
@@ -382,10 +396,3 @@ svg {
 
 
 /*///////////Thank you page styling//////////*/
-
-.fb-share-button {
-  background-color: silver
-
-}
-
-
