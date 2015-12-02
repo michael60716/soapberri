@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+
 }
 
 html, body {
@@ -67,7 +68,7 @@ input {
   background-position: center;*/
   /*height: 80%;*/
   height: 55px;
-  width: 121.688px;
+  /*width: 121.688px;*/
 /*
   margin-left: 2%;
   max-width: 10%*/
@@ -198,7 +199,7 @@ input.name {
   height: 600px;
   width: 100%;
   position: relative;
-  /*background-color: black;*/
+  background-image: url("../img/videobackup.png");
 }
 
 .video-text {
