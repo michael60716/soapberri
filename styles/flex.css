@@ -20,6 +20,7 @@
   .main-header {
   flex-direction: row;
   justify-content: space-between;
+/*  min-width: 95%;*/
 }
   
 
@@ -43,8 +44,10 @@
 @media (min-width: 1025px) {
 	.main-header {
 		width: 90%;
-		max-width: 1150px;
+		margin-left: auto;
+    	margin-right: auto;
 	}
+
 }
 
 @media (max-width: 769px) {
@@ -67,7 +70,7 @@
 	}
 
 	.home-title {
-		margin-top: 0;
+		margin-top: 5%;
 		font-size: 10vw;
 	}
 
@@ -105,4 +108,55 @@
 	#story {
 		height: 86%;
 	}
+
+
+/*///////////michael's edit///////////*/
+
+input, button {
+  font-size: 4vw;
+  	-webkit-appearance: none;
+   	border-radius: 0;
+}
+
+input.name, input.email {
+	padding-top: 2.5%;
+	padding-bottom: 2.5%;
+}
+
+input.name {
+	  margin-top: 5vw;
+}
+
+.home-image {
+    height: 18vw;
+}
+
+.video-container {
+	height: 60%;
+}
+
+.video-container2 {
+	height: 60%;
+}
+
+.signup-overlay {
+  height: 70%;
+}
+
+/*.video-container3 {
+	height: 60%
+}*/
+
+.video-text-overlay {
+	background-color: black;
+	opacity: 0.3;
+	width: 100%;
+}
+
+.video-text {
+	color: white;
+	right: 50%;
+	width: 50%;
+	font-size: 6vw;
+	text-align: center;
 }

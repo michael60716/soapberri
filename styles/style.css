@@ -38,6 +38,7 @@ header {
   /*height: 10%;*/
   margin: 3%;
   text-align: center;
+
 }
 
 footer {
@@ -60,7 +61,6 @@ input {
   border: 2px solid silver;
 }
 
-
 .logo {
 /*  background-image: url("../img/logo.png");
   background-size: contain;
@@ -69,9 +69,7 @@ input {
   /*height: 80%;*/
   height: 55px;
   /*width: 121.688px;*/
-/*
-  margin-left: 2%;
-  max-width: 10%*/
+/*  max-width: 10%*/
 
 }
 
@@ -131,7 +129,8 @@ a.selected, a:hover {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 18%;
+  height: 7vw; 
+  /*height: 18%;*/
   margin-top: 4%;
 }
 
@@ -144,6 +143,7 @@ a.selected, a:hover {
   color: white;
   padding: 10px 20px;
   border: 1px solid #1F465E;
+/*  box-shadow: 0 2px #030b0f;*/
   opacity: 1;
 }
 
@@ -170,16 +170,6 @@ input.name {
   font-size: 1.1em;
 }
 
-
-.bg-container {
-  background-image: url("../img/bg1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100%;
-}
-
-
 .what-container {
   /*height: 70%; mobile*/
   width: 100%;
@@ -190,7 +180,7 @@ input.name {
 
 
 .parallax-window {
-    min-height: 600px;
+    height: 80%;
     background: transparent;
 }
 
@@ -200,11 +190,23 @@ input.name {
   width: 100%;
   position: relative;
   background-image: url("../img/videobackup.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
+.video-container2 {
+  height: 600px;
+  width: 100%;
+  position: relative;
+  background-image: url("../img/videobackup2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
 .video-text {
-  color: #3e3e3e;
-  position: absolute;
+  color: #f9f9f9;
+    position: absolute;
   top: 50%;
   transform: translate3d(50%, -50%, 0);
   right: 85%;
@@ -214,29 +216,22 @@ input.name {
 }
 
 .video-text-overlay {
-  height: 100%;
+/*  height: 100%;
   width: 30%;
   z-index: 98;
   position: absolute;
   background-color: white;
-  opacity: 0.4;
+  opacity: 0.4;*/
 }
 
-.video-overlay {
+#video-overlay {
   height:100%;
   width: 100%;
   position: absolute;
   z-index: 97;
   background-color: silver;
-  opacity: 0.3;
+  opacity: 0.1;
 }
-
-
-.hand-video {
-  width: 100%;
-  opacity: 0.7;
-}
-
 
 .section-container {
   height: 90%;
@@ -279,35 +274,43 @@ input.name {
 
 }
 
-
 #story {
   height: 70%;
 }
 
-.parallax-signup {
-    min-height: 100%;
-    background: transparent;
-    position: relative;
+
+.video-container3 {
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  position: relative;
+  background-image: url("../img/videobackup3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#signup-video {
+  width: 100%;
 }
 
 .signup-container {
   text-align: center;
-  /*opacity: 0.6;*/
   position: absolute;
   width: 100%;
-  /*height: 100%*/
   top: 50%;
   transform: translateY(-50%);
+  z-index: 3;
 }
 
 .signup-overlay {
   background-color: white;
-  height: 120%;
+  height: 50%;
   width: 100%;
   position: absolute;
-  top: -10%;
-  opacity: 0.6;
-  z-index: -1;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.8;
+  z-index: 2;
 }
 
 .email-container2 {
@@ -318,20 +321,6 @@ input.name {
   opacity: 0.5;
 }
 
-.social-icons-list {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  width: 100%;
-  height: 50%;
-  padding: 0;
-}
-
-.social-icons-list li svg {
-  width: 32px;
-  color: #1F465E;
-}
-
 
 .footer-text {
   align-self: flex-end;
@@ -339,41 +328,6 @@ input.name {
 
 }
 
-/*MAILCHIMP CSS OVERRIDE*/
-#mc_embed_signup_scroll {
-  display: flex;
-  justify-content: center;
-  margin-top: 3%
-
-}
-
-#mce-FIRSTNAME {
-  width: 130px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-}
-
-#mce-EMAIL{
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 70px;
-  margin-left: 15px;
-  margin-right: 15px; 
-}
-
-#mc-embedded-subscribe {
-  background-color: #1F465E;
-  color: white;
-  padding: 10px 20px;
-  border: 1px solid #1F465E;
-  opacity: 1;
-}
-
-.clear {
-  font-family: 'didot';
-}
 
 
 /*///////////place holder styling//////////*/
@@ -397,3 +351,26 @@ input.name {
 
 
 /*///////////Thank you page styling//////////*/
+
+
+.tylogo {
+  margin-left: auto;
+  margin-right:auto;
+  margin-top: 4vw;
+
+}
+
+.tyhomeimage {
+  background-image: url("../img/soapberry.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 7vw; 
+}
+
+.social {
+  margin-top: 2%;
+  margin-bottom: 4%;
+
+
+}
